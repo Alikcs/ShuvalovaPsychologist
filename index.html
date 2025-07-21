@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Марина Шувалова | Семейный психолог</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Марина Шувалова</h1>
+                <p>семейный психолог</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#requests">Запросы</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#price">Прайс</a></li>
+                    <li><a href="contacts.html" class="nav-cta">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+            <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Динамическое определение высоты шапки
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>“Для меня важно, чтобы каждый здесь нашел себя”</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span>5+</span>
+                        <p>лет опыта</p>
+                    </div>
+                    <div class="stat-item">
+                        <span>5000+</span>
+                        <p>клиентов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="photo2.jpg" alt="Марина Шувалова" class="profile-photo">
+            </div>
+        </div>
+        <div class="hero-divider"></div>
+    </section>
+
+        <!-- Секция "Обо мне" -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Мой путь в психологию</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="journey-container">
+                <!-- Перенесем картинку и текст "Да-да..." в начало -->
+                <div class="journey-image">
+                    <div class="image-frame">
+                        <img src="myway.jpg" alt="Мой путь в психологию">
+                    </div>
+                    <div class="journey-card accent-border">
+                        <p class="quote">Да-да, именно так выглядит тернистый долгий путь с собственными ошибками.</p>
+                    </div>
+                </div>
+                
+                <div class="journey-text">
+                    <div class="journey-card accent-bg">
+                        <p class="quote">Я пришла в психологию через личные кризисы и трудные жизненные ситуации. Мой опыт и осознание себя стали основой для выбора этой профессии.</p>
+                    </div>
+                    
+                    <div class="journey-card">
+                        <p class="quote">В какой-то момент в моей жизни произошел кризис: разрушились отношения, произошли предательства, и бизнес тоже потерпел крах.</p>
+                    </div>
+                    
+                    <div class="journey-card accent-bg">
+                        <p class="quote">Мой путь в психологию — это постоянное развитие и стремление помочь другим. Я продолжаю учиться и применять свои знания для улучшения жизни клиентов.</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <h3>Образование</h3>
+                        <ul>
+                            <li><span class="icon">🎓</span> Высшее экономическое образование</li>
+                            <li><span class="icon">💄</span> Диплом визажиста</li>
+                            <li><span class="icon">✂️</span> Сертификаты парикмахера</li>
+                            <li><span class="icon">🧠</span> Профессиональная переподготовка в области психологии</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Запросы" -->
+    <section id="requests" class="section accent-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Запросы клиентов</h2>
+                <div class="divider"></div>
+                <p class="subtitle">Работаю с широким спектром психологических запросов</p>
+            </div>
+            
+            <div class="requests-grid">
+                <div class="request-item">
+                    <div class="request-icon">🔄</div>
+                    <h3>Внутренний конфликт</h3>
+                </div>
+                <div class="request-item">
+                    <div class="request-icon">💔</div>
+                    <h3>Проблема в отношениях</h3>
+                </div>
+                <div class="request-item">
+                    <div class="request-icon">📉</div>
+                    <h3>Низкая самооценка</h3>
+                </div>
+                <div class="request-item">
+                    <div class="request-icon">💗</div>
+                    <h3>Эмоциональная зависимость</h3>
+                </div>
+                <div class="request-item">
+                    <div class="request-icon">💎</div>
+                    <h3>Отсутствие самоценности</h3>
+                </div>
+                <div class="request-item">
+                    <div class="request-icon">🚧</div>
+                    <h3>Отсутствие границ</h3>
+                </div>
+                <div class="request-item">
+                    <div class="request-icon">😨</div>
+                    <h3>Панические атаки, депрессия, апатия</h3>
+                </div>
+                <div class="request-item">
+                    <div class="request-icon">🚫</div>
+                    <h3>Внутренние страхи и ограничения</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Отзывы" -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Отзывы клиентов</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-author">Анна, 34 года</div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Работа с Мариной изменила мою жизнь. После 10 сессий я научилась выстраивать границы и полюбила себя. Теперь я счастлива в отношениях!"</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-author">Дмитрий, 42 года</div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Благодаря Марине я смог преодолеть панические атаки, которые мучили меня 2 года. Профессиональный подход и душевная поддержка."</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-author">Екатерина, 29 лет</div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Нумерологический анализ по дате рождения помог мне понять свои сильные стороны. Теперь я знаю, как реализовать свой потенциал."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Секция "Прайс" -->
+    <section id="price" class="section accent-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Стоимость услуг</h2>
+                <div class="divider"></div>
+                <p class="subtitle">Индивидуальный подход для каждого клиента</p>
+            </div>
+            
+            <div class="price-container">
+                <!-- Индивидуальная сессия - первый блок -->
+                <div class="price-card">
+                    <h3>Индивидуальная сессия</h3>
+                    <div class="price-amount">3 000 ₽</div>
+                    <ul>
+                        <li>Продолжительность: 1 час</li>
+                        <li>Личная встреча или онлайн</li>
+                        <li>Индивидуальный подход</li>
+                    </ul>
+                    <a href="contacts.html" class="btn">Записаться</a>
+                </div>
+                
+                <!-- Нумерологический анализ - второй блок -->
+                <div class="price-card featured">
+                    <div class="featured-badge">Популярно</div>
+                    <h3>Нумерологический анализ</h3>
+                    <div class="price-amount">3 000 ₽</div>
+                    <p>Расчет по дате рождения (цифровая психология)</p>
+                    <ul>
+                        <li>Узнаете задачи вашей души</li>
+                        <li>Выявите установки, мешающие достижению целей</li>
+                        <li>Поймете, как жить жизнью, о которой мечтаете</li>
+                    </ul>
+                    <a href="contacts.html" class="btn">Заказать анализ</a>
+                </div>
+                
+                <!-- Пакеты сессий - третий блок -->
+                <div class="price-card">
+                    <h3>Пакеты сессий</h3>
+                    <div class="price-packages">
+                        <div class="package">
+                            <span>2 сессии</span>
+                            <span>5 000 ₽</span>
+                        </div>
+                        <div class="package">
+                            <span>3 сессии</span>
+                            <span>8 000 ₽</span>
+                        </div>
+                        <div class="package">
+                            <span>10 сессий</span>
+                            <span>25 000 ₽</span>
+                        </div>
+                    </div>
+                    <a href="contacts.html" class="btn">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Марина Шувалова</h3>
+                    <p>Семейный психолог с 5-летним опытом</p>
+                    <p>Помогаю найти себя и обрести гармонию</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#requests">Запросы</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#price">Прайс</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-cta">
+                    <h4>Запись на консультацию</h4>
+                    <p>Готова помочь вам на пути к гармонии</p>
+                    <a href="contacts.html" class="btn">Записаться</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Марина Шувалова | Семейный психолог</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
